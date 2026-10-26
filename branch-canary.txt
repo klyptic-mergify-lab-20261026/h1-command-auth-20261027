@@ -1,1 +1,2 @@
-Owned command authorization branch canary.\n
+Owned command authorization branch canary.
+Same-repository author restriction regression fixture.
