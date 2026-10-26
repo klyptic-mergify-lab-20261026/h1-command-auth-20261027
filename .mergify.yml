@@ -1,0 +1,22 @@
+pull_request_rules:
+  - name: safe jinja literal probe
+    conditions:
+      - base = main
+    actions:
+      post_check:
+        title: TITLE={{ title }}
+        summary: safe-control
+  - name: safe jinja arithmetic probe
+    conditions:
+      - base = main
+    actions:
+      post_check:
+        title: MATH={{ 7 * 7 }}
+        summary: safe-control
+  - name: safe jinja attribute probe
+    conditions:
+      - base = main
+    actions:
+      post_check:
+        title: TYPE={{ "".__class__ }}
+        summary: safe-control
