@@ -1,8 +1,0 @@
-merge_queue:
-  max_parallel_checks: 1
-  queue_controls_comment: true
-queue_rules:
-  - name: h1-checkbox-control
-    queue_conditions: []
-    merge_conditions:
-      - check-success = h1-never-control
